@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Handsome. — Hussen Taiwo</title>
+    <meta
+      name="description"
+      content="Hussen Taiwo — UI/UX Designer, Frontend Developer and Shopify Developer."
+    />
+    <meta name="theme-color" content="#f7f5ef" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        if (localStorage.getItem("handsome-theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Shared header -->
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Handsome — home">
+          <svg
+            class="brand-mark"
+            viewBox="0 0 40 40"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="3"
+              width="34"
+              height="34"
+              rx="10"
+              fill="currentColor"
+            />
+            <path
+              d="M12 11.5V28.5M27.8 11.5V28.5M12 20H23.5L28 15.5"
+              stroke-width="3.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="brand-name">Handsome</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html" aria-current="page">Home</a>
+          <a class="nav-link" href="work.html">Work</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-pressed="false"
+            aria-label="Switch to dark theme"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.5 9.6A6 6 0 1 1 6.4 2.5a4.7 4.7 0 0 0 7.1 7.1Z"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <circle
+                cx="8"
+                cy="8"
+                r="3"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+              <path
+                d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <a class="btn btn-primary talk-button" href="contact.html"
+            >Let’s talk
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path
+                d="M3 9 9 3M4 3h5v5"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Shared mobile menu -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-menu-top">
+        <span class="index-label">Handsome / Navigation</span>
+        <button class="menu-close" type="button" aria-label="Close menu">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="m2 2 10 10M12 2 2 12"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-menu-list">
+        <li>
+          <a class="mobile-link" href="index.html" aria-current="page"
+            ><small>01</small>Home</a
+          >
+        </li>
+        <li>
+          <a class="mobile-link" href="work.html"><small>02</small>Work</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="about.html"><small>03</small>About</a>
+        </li>
+        <li>
+          <a class="mobile-link" href="contact.html"
+            ><small>04</small>Contact</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-menu-foot">
+        <span>Nigeria</span>
+        <a href="mailto:devhandsome10@gmail.com">devhandsome10@gmail.com</a>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow reveal">
+              Frontend Developer • UI/UX Designer • Shopify Developer
+            </p>
+            <h1 class="hero-title reveal" id="hero-title" style="--i: 1">
+              I make digital products
+              <span class="serif-italic">feel obvious.</span>
+            </h1>
+            <p class="hero-lede reveal" style="--i: 2">
+              I’m Hussen Taiwo — a multidisciplinary digital product
+              professional in Nigeria. I move from idea to UX, visual design,
+              frontend implementation, and ecommerce experience without losing
+              the thread.
+            </p>
+            <div class="hero-actions reveal" style="--i: 3">
+              <a class="btn btn-primary" href="work.html"
+                >See the work
+                <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 9 9 3M4 3h5v5"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a class="text-link" href="about.html"
+                >More about me
+                <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 9 9 3M4 3h5v5"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="hero-status reveal" style="--i: 4">
+              <span
+                ><i class="status-dot" aria-hidden="true"></i>Available for
+                thoughtful work</span
+              >
+              <span>Nigeria / open to remote</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" style="--i: 2">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="hero-ring" aria-hidden="true"></div>
+            <figure class="portrait">
+              <div class="portrait-frame">
+                <img
+                  src="assets/images/professional_linkedin_headshot.png"
+                  width="348"
+                  height="426"
+                  alt="Portrait of Hussen Taiwo, smiling, in a navy blazer and white shirt"
+                  fetchpriority="high"
+                />
+                <figcaption class="portrait-caption">
+                  <span>Hussen Taiwo</span><span>Digital craft / 01</span>
+                </figcaption>
+              </div>
+            </figure>
+            <p class="hero-side-label" aria-hidden="true">
+              Design → Code → Commerce
+            </p>
+          </div>
+        </div>
+
+        <div class="container hero-foot">
+          <span class="scroll-hint" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none">
+              <path
+                d="M6 1.5v9M2.5 7 6 10.5 9.5 7"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+            >Scroll to explore
+          </span>
+          <span>Currently building useful things with care.</span>
+        </div>
+      </section>
+
+      <section class="section section--soft" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="index-label reveal">( 01 / Selected work )</span>
+            <div class="reveal" style="--i: 1">
+              <h2 class="section-title" id="work-title">
+                Real projects, built with intent.
+              </h2>
+              <p class="section-intro">
+                A focused selection from the supplied live portfolio. Each
+                project uses its own showcase image and links to the associated
+                public experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="work-grid">
+            <a
+              class="work-card reveal"
+              href="https://velourashop-4QQ7WTS.manus.space/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="work-media">
+                <div class="work-chrome">
+                  <span class="work-dots" aria-hidden="true"
+                    ><i></i><i></i><i></i></span
+                  ><span>Live project</span
+                  ><span class="work-host"
+                    >velourashop-4qq7wts.manus.space/</span
+                  >
+                </div>
+                <div class="work-image">
+                  <img
+                    src="assets/images/projects/portfolio_2_veloura_nobadge.png"
+                    width="711"
+                    height="240"
+                    loading="lazy"
+                    alt="Veloura skincare storefront with the headline “Luxury skincare, softly considered.”"
+                  />
+                </div>
+                <span class="work-badge" aria-hidden="true"
+                  >Live site / Supplied showcase</span
+                >
+              </div>
+              <div class="work-meta">
+                <span class="index-label">Ecommerce / Live project</span>
+                <span class="arrow-circle"
+                  ><svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path
+                      d="M3 9 9 3M4 3h5v5"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+              </div>
+              <h3 class="work-title">Veloura Ecommerce</h3>
+              <p class="work-desc">
+                Luxury skincare commerce, softly considered.
+              </p>
+            </a>
+
+            <a
+              class="work-card reveal"
+              style="--i: 1"
+              href="https://elvixesk-in-hyfdqpxh.manus.space/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="work-media">
+                <div class="work-chrome">
+                  <span class="work-dots" aria-hidden="true"
+                    ><i></i><i></i><i></i></span
+                  ><span>Live project</span
+                  ><span class="work-host"
+                    >elvixesk-in-hyfdqpxh.manus.space/</span
+                  >
+                </div>
+                <div class="work-image">
+                  <img
+                    src="assets/images/projects/portfolio_3_elvixe_nobadge.png"
+                    width="381"
+                    height="240"
+                    loading="lazy"
+                    alt="Elvixe skincare site shown on laptop and phone with a warm dark and yellow palette"
+                  />
+                </div>
+                <span class="work-badge" aria-hidden="true"
+                  >Live site / Supplied showcase</span
+                >
+              </div>
+              <div class="work-meta">
+                <span class="index-label">Ecommerce / Live project</span>
+                <span class="arrow-circle"
+                  ><svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path
+                      d="M3 9 9 3M4 3h5v5"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+              </div>
+              <h3 class="work-title">Elvixe Skincare</h3>
+              <p class="work-desc">Thoughtful skincare, every day.</p>
+            </a>
+
+            <a
+              class="work-card reveal"
+              href="https://aiworkspa-nzdo48cx.manus.space/"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="work-media">
+                <div class="work-chrome">
+                  <span class="work-dots" aria-hidden="true"
+                    ><i></i><i></i><i></i></span
+                  ><span>Live project</span
+                  ><span class="work-host"
+                    >aiworkspa-nzdo48cx.manus.space/</span
+                  >
+                </div>
+                <div class="work-image">
+                  <img
+                    src="assets/images/projects/portfolio_4_aiworkspace.png"
+                    width="711"
+                    height="255"
+                    loading="lazy"
+                    alt="AI Workspace product page with the headline “Your work, amplified by AI.”"
+                  />
+                </div>
+                <span class="work-badge" aria-hidden="true"
+                  >Live site / Supplied showcase</span
+                >
+              </div>
+              <div class="work-meta">
+                <span class="index-label">Product design / Live project</span>
+                <span class="arrow-circle"
+                  ><svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path
+                      d="M3 9 9 3M4 3h5v5"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+              </div>
+              <h3 class="work-title">AI Workspace</h3>
+              <p class="work-desc">
+                Contextual productivity for research, decisions, and shared
+                work.
+              </p>
+            </a>
+          </div>
+
+          <a class="text-link work-all reveal" href="work.html"
+            >View all 13 projects
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path
+                d="M3 9 9 3M4 3h5v5"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- 02 Capabilities -->
+      <section class="section section--surface" aria-labelledby="cap-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="index-label reveal">( 02 / Capabilities )</span>
+            <div class="reveal" style="--i: 1">
+              <h2 class="section-title" id="cap-title">
+                One thread from idea to interface.
+              </h2>
+              <p class="section-intro">
+                The most useful work happens between disciplines. I bring design
+                judgment and implementation detail into the same conversation.
+              </p>
+            </div>
+          </div>
+
+          <ul class="capability-list">
+            <li class="capability reveal">
+              <span class="capability-index">01</span>
+              <div>
+                <h3>UI/UX Design</h3>
+                <p>
+                  Interfaces with a clear point of view, from information
+                  architecture to interaction detail.
+                </p>
+                <ul class="pill-row">
+                  <li class="pill">Product interfaces</li>
+                  <li class="pill">UX architecture</li>
+                  <li class="pill">Design systems</li>
+                  <li class="pill">Prototyping</li>
+                </ul>
+              </div>
+              <span class="capability-arrow" aria-hidden="true"
+                ><svg viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M3 9 9 3M4 3h5v5"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+            </li>
+            <li class="capability reveal">
+              <span class="capability-index">02</span>
+              <div>
+                <h3>Frontend Development</h3>
+                <p>
+                  Responsive React experiences built with reusable systems,
+                  accessible states, and care for the last 10%.
+                </p>
+                <ul class="pill-row">
+                  <li class="pill">React + TypeScript</li>
+                  <li class="pill">Component architecture</li>
+                  <li class="pill">Accessibility</li>
+                  <li class="pill">Performance</li>
+                </ul>
+              </div>
+              <span class="capability-arrow" aria-hidden="true"
+                ><svg viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M3 9 9 3M4 3h5v5"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+            </li>
+            <li class="capability reveal">
+              <span class="capability-index">03</span>
+              <div>
+                <h3>Shopify Development</h3>
+                <p>
+                  Commerce experiences that bring editorial storytelling and a
+                  confident purchase path into the same system.
+                </p>
+                <ul class="pill-row">
+                  <li class="pill">Shopify 2.0</li>
+                  <li class="pill">Liquid sections</li>
+                  <li class="pill">Ecommerce UX</li>
+                  <li class="pill">Figma → storefront</li>
+                </ul>
+              </div>
+              <span class="capability-arrow" aria-hidden="true"
+                ><svg viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M3 9 9 3M4 3h5v5"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 03 Toolkit -->
+      <section class="section section--soft" aria-labelledby="tool-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="index-label reveal">( 03 / The toolkit )</span>
+            <div class="reveal" style="--i: 1">
+              <h2 class="section-title" id="tool-title">
+                A broad toolkit, used with restraint.
+              </h2>
+              <p class="section-intro">
+                Tools matter when they help the experience become clearer,
+                faster, or more resilient. Not as badges. As decisions.
+              </p>
+            </div>
+          </div>
+
+          <div class="toolkit-grid">
+            <div class="principle reveal">
+              <span class="index-label">The principle</span>
+              <p class="principle-text">
+                Good digital work is rarely one discipline in isolation. The
+                value is in making the joins feel intentional.
+              </p>
+              <a class="text-link" href="about.html"
+                >How I work
+                <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 9 9 3M4 3h5v5"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="tool-groups reveal" style="--i: 1">
+              <div class="tool-group">
+                <h3>Design</h3>
+                <ul class="tool-list">
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Figma
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >FigJam
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Wireframing
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Prototyping
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Design Systems
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >UX Research
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Interaction Design
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Responsive Design
+                  </li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <h3>Frontend</h3>
+                <ul class="tool-list">
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >HTML
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >CSS
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >JavaScript
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >TypeScript
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >React
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Next.js
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Tailwind CSS
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Git
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >REST APIs
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Accessibility
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Performance
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >SEO
+                  </li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <h3>Shopify</h3>
+                <ul class="tool-list">
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Shopify
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Liquid
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Shopify 2.0
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Theme Development
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Custom Sections
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Metafields
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Metaobjects
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path
+                        d="m2.5 6.2 2.4 2.4 4.6-5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    >Responsive Ecommerce UI
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Process -->
+      <section class="section section--surface" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="index-label reveal">( 04 / How I work )</span>
+            <div class="reveal" style="--i: 1">
+              <h2 class="section-title" id="process-title">
+                A six-step rhythm that keeps the work moving.
+              </h2>
+              <p class="section-intro">
+                The process is not a ceremony. It is a way to make the right
+                thing visible at the right moment.
+              </p>
+            </div>
+          </div>
+
+          <ol class="process-grid">
+            <li class="process-step reveal">
+              <span class="process-num">01</span>
+              <h3>Discover</h3>
+              <p>
+                Understand the people, constraints, and opportunity before
+                making the first screen.
+              </p>
+              <small>Context, questions, references</small>
+            </li>
+            <li class="process-step reveal" style="--i: 1">
+              <span class="process-num">02</span>
+              <h3>Define</h3>
+              <p>
+                Turn ambiguity into a shared direction, a useful structure, and
+                a crisp next step.
+              </p>
+              <small>Flows, scope, priorities</small>
+            </li>
+            <li class="process-step reveal" style="--i: 2">
+              <span class="process-num">03</span>
+              <h3>Design</h3>
+              <p>
+                Give the experience a visual language that is clear, expressive,
+                and ready to scale.
+              </p>
+              <small>Wireframes, UI, prototypes</small>
+            </li>
+            <li class="process-step reveal">
+              <span class="process-num">04</span>
+              <h3>Build</h3>
+              <p>
+                Translate intent into resilient frontend or storefront
+                components that behave well in the real world.
+              </p>
+              <small>Components, responsive states</small>
+            </li>
+            <li class="process-step reveal" style="--i: 1">
+              <span class="process-num">05</span>
+              <h3>Refine</h3>
+              <p>
+                Test the details: hierarchy, accessibility, motion, performance,
+                and the moments that make it feel finished.
+              </p>
+              <small>QA, polish, edge cases</small>
+            </li>
+            <li class="process-step reveal" style="--i: 2">
+              <span class="process-num">06</span>
+              <h3>Launch</h3>
+              <p>
+                Ship with clarity, handoff what matters, and leave a foundation
+                that can keep improving.
+              </p>
+              <small>Handoff, documentation, next moves</small>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 05 Trust -->
+      <section class="proof" aria-labelledby="proof-title">
+        <div class="container proof-grid">
+          <div class="reveal">
+            <span class="index-label">( 05 / Trust )</span>
+            <h2 class="proof-title" id="proof-title">
+              Proof lives in the work.
+            </h2>
+            <p class="proof-copy">
+              There are no invented testimonials, client names, awards, or
+              metrics here. Every project is presented from supplied showcase
+              imagery and verifiable live experience.
+            </p>
+          </div>
+          <div class="reveal" style="--i: 1">
+            <div class="proof-links">
+              <!-- TODO: replace with Hussen's real profile URLs -->
+              <a
+                class="proof-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path
+                    d="M9 3h4v4M13 3 7.5 8.5M11 10v2.5a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1H6"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+              <a
+                class="proof-link"
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                >GitHub
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path
+                    d="M9 3h4v4M13 3 7.5 8.5M11 10v2.5a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1H6"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+            <p class="proof-note">
+              <i class="status-dot" aria-hidden="true"></i
+              ><span>Real information only.<br />No filler proof.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 About strip -->
+      <section class="section section--soft" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-photo reveal">
+            <img
+              src="assets/images/professional_linkedin_headshot.png"
+              width="339"
+              height="381"
+              loading="lazy"
+              alt="Hussen Taiwo in a navy blazer against a grey studio backdrop"
+            />
+            <span>02 / About</span>
+          </div>
+          <div class="about-copy reveal" style="--i: 1">
+            <span class="index-label">( 06 / A little context )</span>
+            <h2 class="about-title" id="about-title">
+              Curious about the space between a good idea and a good experience.
+            </h2>
+            <p class="about-text">
+              I care about the moment a complex product becomes understandable:
+              the hierarchy, the interaction, the implementation, and the detail
+              that makes someone trust what they are using.
+            </p>
+            <a class="btn btn-outline" href="about.html"
+              >Read the longer version
+              <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path
+                  d="M3 9 9 3M4 3h5v5"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 CTA -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container reveal">
+          <span class="index-label">( 07 / Next move )</span>
+          <h2 class="cta-title" id="cta-title">
+            Have a product that deserves a clearer path?
+          </h2>
+          <a class="btn btn-primary" href="contact.html"
+            >Let’s talk
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path
+                d="M3 9 9 3M4 3h5v5"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="Handsome — home">
+              <svg
+                class="brand-mark"
+                viewBox="0 0 40 40"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="34"
+                  height="34"
+                  rx="10"
+                  fill="currentColor"
+                />
+                <path
+                  d="M12 11.5V28.5M27.8 11.5V28.5M12 20H23.5L28 15.5"
+                  stroke-width="3.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="brand-name">Handsome</span>
+            </a>
+            <p>Digital product craft across UX, frontend, and commerce.</p>
+          </div>
+          <div class="footer-contact">
+            <span class="eyebrow">Available for thoughtful work</span><br />
+            <a class="footer-email" href="mailto:devhandsome10@gmail.com"
+              >devhandsome10@gmail.com</a
+            >
+            <p>Nigeria</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Hussen Taiwo</span>
+          <nav class="footer-links" aria-label="Footer">
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/huzitaiwo"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </nav>
+          <span class="footer-status"
+            ><i class="status-dot" aria-hidden="true"></i>Open to
+            opportunities</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
