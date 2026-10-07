@@ -1,7 +1,7 @@
 :root {
   --surface: #f7f5ef;
   --surface-secondary: #fffefa;
-  --surface-footer: #efede8;
+  --surface-footer: #efeee8;
   --text: #111211;
   --muted: #59605e;
   --line: rgba(17, 18, 17, 0.1);
@@ -18,7 +18,7 @@
   --mark-fill: #111211;
   --mark-stroke: #b8ee61;
 
-  --header-height: 76px;
+  --header-height: 82px;
   --container-width: 1180px;
   --gutter: 24px;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -29,9 +29,9 @@
 }
 
 html[data-theme="dark"] {
-  --surface: #171517;
+  --surface: #151715;
   --surface-secondary: #1d201c;
-  --surface-footer: #131413;
+  --surface-footer: #242822;
   --text: #f7f5ef;
   --muted: #b8beb8;
   --line: rgba(247, 245, 239, 0.12);
