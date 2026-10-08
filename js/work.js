@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var ECOM = ["UI/UX", "Frontend", "Shopify", "Ecommerce"];
+  var ECOM = ["Shopify", "Ecommerce"];
   var PROD = ["UI/UX", "Frontend", "Product Design"];
 
   var PROJECTS = [

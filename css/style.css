@@ -209,6 +209,8 @@ p {
 }
 .btn-primary:hover {
   transform: translateY(-1px);
+  background: var(--lime);
+  color: var(--text);
 }
 
 .btn-outline {
