@@ -458,3 +458,10 @@ html[data-theme="dark"] .cap__num,
 html[data-theme="dark"] .steps li span {
   color: var(--lime);
 }
+
+/* Compact button used in page content (the header .talk-button is hidden on mobile) */
+.btn-sm {
+  min-height: 44px;
+  padding: 0 19px;
+  font-size: 12px;
+}
