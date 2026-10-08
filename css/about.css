@@ -1,0 +1,460 @@
+/* ==========================================================================
+   About page only. Header, menu, buttons, footer and tokens live in style.css.
+   ========================================================================== */
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4.9vw, 67px);
+  font-weight: 500;
+  letter-spacing: -0.075em;
+  line-height: 0.95;
+}
+.body-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 560px;
+}
+
+/* Two-column split used by Philosophy, Approach, Connect: label+title | content */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 48.8%) minmax(0, 1fr);
+}
+.split .index-label {
+  display: block;
+  margin-bottom: 26px;
+  font-size: 10px;
+}
+
+/* Intro ------------------------------------------------------------------ */
+.about-top {
+  background: var(--surface-secondary);
+  transition: background-color 0.4s var(--ease);
+}
+.about-intro {
+  padding-block: clamp(104px, 12.5vw, 171px) clamp(70px, 17.4vw, 238px);
+}
+.about-intro__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: end;
+}
+.about-intro .index-label {
+  display: block;
+  margin-bottom: 26px;
+  font-size: 10px;
+}
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 8.8vw, 120px);
+  font-weight: 400;
+  letter-spacing: -0.075em;
+  line-height: 0.9;
+  max-width: 5.2em;
+}
+.about-title .serif-italic {
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  font-size: 1.02em;
+}
+.about-intro__text {
+  max-width: 440px;
+  padding-bottom: 4px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* 01 Introduction -------------------------------------------------------- */
+.about-story {
+  padding-block: 0 clamp(90px, 12vw, 164px);
+}
+.about-story__grid {
+  display: grid;
+  grid-template-columns: 35.3% minmax(0, 1fr);
+  column-gap: 11.6%;
+  align-items: start;
+}
+.portrait {
+  position: relative;
+  margin: 0;
+  box-shadow: 0 34px 70px rgba(17, 18, 17, 0.14);
+}
+html[data-theme="dark"] .portrait {
+  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.45);
+}
+.portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 417 / 557;
+  object-fit: cover;
+  object-position: center top;
+}
+.portrait figcaption {
+  position: absolute;
+  right: 14px;
+  bottom: 17px;
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.story__body {
+  padding-top: 42px;
+}
+.story__body .index-label {
+  display: block;
+  font-size: 10px;
+}
+.story__title {
+  max-width: 640px;
+  margin-top: 22px;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 68px);
+  font-weight: 400;
+  letter-spacing: -0.075em;
+  line-height: 0.92;
+}
+.story__body p:not(.index-label) {
+  max-width: 545px;
+  margin-top: 26px;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.story__body p + p:not(.index-label) {
+  margin-top: 18px;
+}
+.story__body .btn {
+  margin-top: 22px;
+}
+.story__title + p {
+  margin-top: 28px;
+}
+
+/* 02 Philosophy ---------------------------------------------------------- */
+.philosophy {
+  padding-block: clamp(90px, 13vw, 178px) clamp(90px, 11.7vw, 160px);
+  background: var(--surface);
+  transition: background-color 0.4s var(--ease);
+}
+.philosophy .split > div:first-child .section-title {
+  margin-top: 16px;
+}
+.quote {
+  margin: 0 0 26px;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.1vw, 42px);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 1.07;
+  max-width: 580px;
+  color: var(--muted);
+}
+.philosophy .body-text {
+  margin-top: 0;
+  max-width: 530px;
+  font-size: 14.5px;
+}
+.philosophy .split > div:last-child {
+  padding-top: 0;
+}
+
+/* 03 Capabilities -------------------------------------------------------- */
+.capabilities {
+  padding-block: clamp(90px, 11.9vw, 163px) clamp(90px, 11.6vw, 158px);
+  background: var(--surface-secondary);
+  transition: background-color 0.4s var(--ease);
+}
+.cap-head {
+  display: grid;
+  grid-template-columns: 218px minmax(0, 1fr);
+  align-items: start;
+}
+.cap-head .index-label {
+  font-size: 10px;
+  padding-top: 0;
+}
+.cap-title {
+  margin-top: -2px;
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5.05vw, 69px);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 1.05;
+}
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 22px;
+  margin-top: clamp(38px, 4.1vw, 56px);
+}
+.cap {
+  min-width: 0;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+.cap__num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  color: var(--lime-deep);
+}
+.cap h3 {
+  margin-top: 38px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 1.95vw, 27px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+}
+.cap > p {
+  max-width: 370px;
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.checks {
+  margin-top: 40px;
+}
+.checks li {
+  position: relative;
+  padding-left: 21px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.checks li + li {
+  margin-top: 10px;
+}
+.checks li::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 3px;
+  width: 9px;
+  height: 5px;
+  border-left: 1.3px solid currentColor;
+  border-bottom: 1.3px solid currentColor;
+  transform: rotate(-45deg) scale(0.9);
+  transform-origin: center;
+}
+
+/* 04 Working approach ---------------------------------------------------- */
+.approach {
+  padding-block: clamp(90px, 12.4vw, 170px) clamp(90px, 13.5vw, 185px);
+  background: var(--surface);
+  transition: background-color 0.4s var(--ease);
+}
+.approach .section-title {
+  margin-top: 16px;
+  max-width: 7.4em;
+}
+.steps {
+  align-self: start;
+  margin-top: 0;
+  border-top: 1px solid var(--line);
+  counter-reset: none;
+}
+.steps li {
+  display: flex;
+  align-items: center;
+  min-height: 61px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.steps li span {
+  flex: none;
+  width: 62px;
+  align-self: flex-start;
+  margin-top: 4px;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  color: var(--lime-deep);
+}
+
+/* 05 Connect: a dark band in light theme, a light band in dark theme ------ */
+.connect {
+  --c-bg: #181817;
+  --c-text: #f7f5ef;
+  --c-muted: rgba(247, 245, 239, 0.62);
+  --c-line: rgba(247, 245, 239, 0.18);
+  --c-accent: #a8ee3f;
+  padding-block: clamp(90px, 12.4vw, 170px) clamp(90px, 10.8vw, 148px);
+  background: var(--c-bg);
+  color: var(--c-text);
+  transition:
+    background-color 0.4s var(--ease),
+    color 0.4s var(--ease);
+}
+html[data-theme="dark"] .connect {
+  --c-bg: #f5f4ec;
+  --c-text: #151715;
+  --c-muted: #59605e;
+  --c-line: rgba(17, 18, 17, 0.14);
+  --c-accent: #7db42e;
+}
+.connect .index-label {
+  color: var(--c-muted);
+}
+.connect__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: start;
+}
+.connect .section-title {
+  margin-top: 16px;
+  max-width: 640px;
+  font-size: clamp(40px, 4.72vw, 65px);
+}
+.connect__list {
+  padding-top: 1px;
+}
+.connect__list li {
+  border-bottom: 1px solid var(--c-line);
+}
+.connect__list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 50px;
+  font-size: 13px;
+  color: var(--c-text);
+  transition: opacity 0.3s var(--ease);
+}
+.connect__list a:hover {
+  opacity: 0.7;
+}
+.connect__list a.is-mail {
+  color: var(--c-accent);
+}
+.connect__list svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+}
+.connect__list a.is-mail svg {
+  width: 11px;
+  height: 11px;
+}
+.connect__list a:focus-visible {
+  outline-color: var(--c-accent);
+}
+
+/* Responsive ------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .cap-head {
+    grid-template-columns: 150px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .about-intro__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .about-intro__text {
+    padding-bottom: 0;
+  }
+
+  .about-story__grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .portrait {
+    max-width: 520px;
+  }
+  .story__body {
+    padding-top: 0;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .connect__grid {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+  .cap-head {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .cap-title {
+    margin-top: 0;
+  }
+  .cap-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .cap h3 {
+    margin-top: 30px;
+  }
+  .cap > p {
+    max-width: 520px;
+  }
+  .checks {
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 720px) {
+  .about-intro {
+    padding-block: 72px 56px;
+  }
+  .about-title {
+    font-size: clamp(40px, 11.4vw, 72px);
+    line-height: 0.98;
+    max-width: none;
+  }
+  .portrait {
+    max-width: none;
+  }
+  .story__title {
+    font-size: clamp(34px, 9.6vw, 48px);
+  }
+  .section-title {
+    font-size: clamp(34px, 9.2vw, 48px);
+  }
+  .cap-title {
+    font-size: clamp(32px, 9.2vw, 46px);
+  }
+  .quote {
+    font-size: clamp(22px, 6.2vw, 30px);
+  }
+  .philosophy,
+  .approach,
+  .capabilities,
+  .connect {
+    padding-block: 72px;
+  }
+  .about-story {
+    padding-bottom: 76px;
+  }
+  .steps li {
+    padding-block: 16px;
+  }
+  .steps li span {
+    width: 46px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .connect,
+  .connect__list a {
+    transition: none;
+  }
+}
+
+html[data-theme="dark"] .cap__num,
+html[data-theme="dark"] .steps li span {
+  color: var(--lime);
+}
