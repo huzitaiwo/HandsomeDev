@@ -1,13 +1,6 @@
 (function () {
   "use strict";
 
-  /* Project data ------------------------------------------------------------
-     url   : read from the host label shown on each card in the reference
-             screenshot. Click each one once to confirm it opens the right site.
-     tags  : Veloura's tags come from the brief. The rest are ASSUMED from the
-             category (Ecommerce → UI/UX, Frontend, Shopify, Ecommerce;
-             Product Design → UI/UX, Frontend, Product Design). Edit freely.
-     image : save your originals under assets/images/projects/ with these names. */
   var ECOM = ["UI/UX", "Frontend", "Shopify", "Ecommerce"];
   var PROD = ["UI/UX", "Frontend", "Product Design"];
 
