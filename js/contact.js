@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-  // TODO: change if you want inquiries to go to another address.
   var TO = "devhandsome10@gmail.com";
 
   var form = document.getElementById("inquiry");

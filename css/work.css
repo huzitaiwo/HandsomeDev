@@ -130,7 +130,6 @@
   border-radius: 2px;
 }
 
-/* The framed screenshot: a fixed light surface in both themes (as in the reference). */
 .project__media {
   display: flex;
   flex-direction: column;
@@ -221,7 +220,6 @@
   color: var(--muted);
 }
 
-/* Meta */
 .project__meta {
   position: relative;
   padding: 18px 56px 0 0;
@@ -272,9 +270,9 @@
 }
 .project__link:hover .project__arrow {
   transform: translate(2px, -2px);
-  background: var(--text);
-  border-color: var(--text);
-  color: var(--surface);
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--text);
 }
 
 /* Archive ending */

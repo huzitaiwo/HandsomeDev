@@ -347,9 +347,9 @@
 }
 .work-card:hover .arrow-circle {
   transform: translate(2px, -2px);
-  background: var(--text);
-  border-color: var(--text);
-  color: var(--surface);
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--text);
 }
 .work-title {
   margin-top: 6px;
