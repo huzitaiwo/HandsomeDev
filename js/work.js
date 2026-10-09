@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  // var ECOM = ["Shopify", "Ecommerce"];
-  // var PROD = ["UI/UX", "Frontend", "Product Design"];
-
   /* Project data lives in js/projects-data.js (shared with the project page). */
   var PROJECTS = window.HANDSOME_PROJECTS || [];
 
