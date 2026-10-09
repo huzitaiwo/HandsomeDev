@@ -207,9 +207,9 @@ html[data-theme="dark"] .inquiry {
 .field input:focus-visible,
 .field select:focus-visible,
 .field textarea:focus-visible {
-  outline: 2px solid var(--lime-deep);
-  outline-offset: 4px;
-  border-bottom-color: var(--text);
+  outline: none;
+  border-bottom-color: var(--lime-deep);
+  box-shadow: 0 1px 0 0 var(--lime-deep);
 }
 .field [aria-invalid="true"] {
   border-bottom-color: var(--error);
