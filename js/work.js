@@ -1,153 +1,11 @@
 (function () {
   "use strict";
 
-  var ECOM = ["Shopify", "Ecommerce"];
-  var PROD = ["UI/UX", "Frontend", "Product Design"];
+  // var ECOM = ["Shopify", "Ecommerce"];
+  // var PROD = ["UI/UX", "Frontend", "Product Design"];
 
-  var PROJECTS = [
-    {
-      id: "veloura",
-      title: "Veloura Ecommerce",
-      type: "Ecommerce",
-      description: "Luxury skincare commerce, softly considered.",
-      url: "https://velourashop-4qq7wt3s.manus.space/",
-      image: "assets/images/projects/portfolio_2_veloura_nobadge.png",
-      imageAlt:
-        "Veloura storefront on a laptop with the headline “Luxury skincare, softly considered.”",
-      tags: ECOM,
-    },
-    {
-      id: "elvixe",
-      title: "Elvixe Skincare",
-      type: "Ecommerce",
-      description: "Thoughtful skincare, every day.",
-      url: "https://elvixeskin-hyfdqpxh.manus.space/",
-      image: "assets/images/projects/portfolio_3_elvixe_nobadge.png",
-      imageAlt:
-        "Elvixe skincare site on a laptop and phone beside a close portrait, headlined “Skincare for body & every skin”",
-      tags: ECOM,
-    },
-    {
-      id: "ai-workspace",
-      title: "AI Workspace",
-      type: "Product design",
-      description:
-        "Contextual productivity for research, decisions, and shared work.",
-      url: "https://aiworkspa-nzdo48cx.manus.space/",
-      image: "assets/images/projects/portfolio_4_aiworkspace.png",
-      imageAlt:
-        "AI Workspace product page headlined “Your work, amplified by AI.”",
-      tags: PROD,
-    },
-    {
-      id: "staynest",
-      title: "StayNest Marketplace",
-      type: "Product design",
-      description: "Find a place worth staying for.",
-      url: "https://staynest-mra4smen.manus.space/",
-      image: "assets/images/projects/portfolio_5_staynest.png",
-      imageAlt:
-        "StayNest travel marketplace homepage headlined “Find a place worth staying for.”",
-      tags: PROD,
-    },
-    {
-      id: "coolteam-saas",
-      title: "CoolTeam SaaS",
-      type: "Product design",
-      description: "One shared rhythm, from first thought to final file.",
-      url: "https://coolteamsaas-tq4ccrhg.manus.space/",
-      image: "assets/images/projects/portfolio_6_coolteam.png",
-      imageAlt:
-        "CoolTeam collaboration SaaS homepage headlined “From brief to final delivery, together.”",
-      tags: PROD,
-    },
-    {
-      id: "coolteam-v2",
-      title: "CoolTeam V2",
-      type: "Product design",
-      description: "Creative project management, without the drift.",
-      url: "https://coolteam-fr4mvpq9.manus.space/",
-      image: "assets/images/projects/portfolio_7_coolteam_v2.png",
-      imageAlt:
-        "CoolTeam V2 homepage on a laptop and phone, headlined “Make the work feel in flow.”",
-      tags: PROD,
-    },
-    {
-      id: "foodie",
-      title: "Foodie Marketplace",
-      type: "Product design",
-      description: "Everything you crave, delivered.",
-      url: "https://foodiehub-dmeuqz3s.manus.space/",
-      image: "assets/images/projects/portfolio_8_foodiehub.png",
-      imageAlt: "Foodie Marketplace showcase",
-      tags: PROD,
-    },
-    {
-      id: "hirely",
-      title: "Hirely Jobs",
-      type: "Product design",
-      description: "A more considered way to hire.",
-      url: "https://hirelyjob-g6az9pqk.manus.space/",
-      image: "assets/images/projects/portfolio_9_hirely.png",
-      imageAlt:
-        "Hirely job marketplace homepage headlined “Work that moves with you.”",
-      tags: PROD,
-    },
-    {
-      id: "arvela",
-      title: "ARVELA Furniture",
-      type: "Ecommerce",
-      description: "Thoughtfully designed pieces for calmer rooms.",
-      url: "https://tidyfurnish-9ozvvrkn.manus.space/",
-      image: "assets/images/projects/portfolio_10_arvela.png",
-      imageAlt:
-        "ARVELA furniture storefront with the word “harmony” beside an armchair",
-      tags: ECOM,
-    },
-    {
-      id: "eloura",
-      title: "Eloura Skincare",
-      type: "Ecommerce",
-      description: "Care that feels considered.",
-      url: "https://elouraskin-2m4lvxox.manus.space/",
-      image: "assets/images/projects/portfolio_11_eloura.png",
-      imageAlt:
-        "Eloura skincare homepage headlined “Skincare for Body & Every Skin”",
-      tags: ECOM,
-    },
-    {
-      id: "elvixe-editorial",
-      title: "Elvixe Editorial (V2)",
-      type: "Ecommerce",
-      description:
-        "A second editorial presentation for the Elvixe skincare experience.",
-      url: "https://elvixeskin-hyfdqpxh.manus.space/",
-      image: "assets/images/projects/portfolio_12_elvixe_v2.png",
-      imageAlt: "Elvixe editorial skincare presentation on a laptop and phone",
-      tags: ECOM,
-    },
-    {
-      id: "realty",
-      title: "REALTY Marketplace",
-      type: "Product design",
-      description: "A more considered way to move.",
-      url: "https://realtyhub-eyircxnr.manus.space/",
-      image: "assets/images/projects/portfolio_13_realtyhub.png",
-      imageAlt:
-        "REALTY real estate marketplace headlined “Find a place that feels like home.”",
-      tags: PROD,
-    },
-    {
-      id: "pulse",
-      title: "PULSE Operations",
-      type: "Product design",
-      description: "An operating picture for the work ahead.",
-      url: "https://pulseops-ea4kn5x8.manus.space/",
-      image: "assets/images/projects/portfolio_14_pulseops.png",
-      imageAlt: "PULSE Operations dark dashboard interface",
-      tags: PROD,
-    },
-  ];
+  /* Project data lives in js/projects-data.js (shared with the project page). */
+  var PROJECTS = window.HANDSOME_PROJECTS || [];
 
   var ARROW =
     '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -166,9 +24,9 @@
   function cardHTML(p) {
     var host = new URL(p.url).host.toUpperCase() + "/";
     return (
-      '<a class="project__link" href="' +
-      esc(p.url) +
-      '" target="_blank" rel="noopener noreferrer"' +
+      '<a class="project__link" href="project.html?id=' +
+      encodeURIComponent(p.id) +
+      '"' +
       ' aria-label="' +
       esc(p.title) +
       ' — open live project (opens in a new tab)">' +
