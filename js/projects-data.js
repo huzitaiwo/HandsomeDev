@@ -617,7 +617,7 @@
       title: "REALTY Marketplace",
       type: "Product design",
       description: "A more considered way to move.",
-      url: "https://realtyhub-eyircxnr.manus.space/",
+      url: "https://realty-hub.netlify.app",
       image: "assets/images/projects/portfolio_13_realtyhub.png",
       imageAlt:
         "REALTY real estate marketplace headlined “Find a place that feels like home.”",
