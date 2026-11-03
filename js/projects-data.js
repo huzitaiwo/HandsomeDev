@@ -14,7 +14,7 @@
       title: "Veloura Ecommerce",
       type: "Ecommerce",
       description: "Luxury skincare commerce, softly considered.",
-      url: "https://velourashop-4qq7wt3s.manus.space/",
+      url: "https://shop-veloura.netlify.app/",
       image: "assets/images/projects/portfolio_2_veloura_nobadge.png",
       imageAlt:
         "Veloura storefront on a laptop with the headline “Luxury skincare, softly considered.”",
@@ -69,7 +69,7 @@
       title: "Elvixe Skincare",
       type: "Ecommerce",
       description: "Thoughtful skincare, every day.",
-      url: "https://elvixeskin-hyfdqpxh.manus.space/",
+      url: "https://shop-elvixe.netlify.app/",
       image: "assets/images/projects/portfolio_3_elvixe_nobadge.png",
       imageAlt:
         "Elvixe skincare site on a laptop and phone beside a close portrait, headlined “Skincare for body & every skin”",
@@ -122,7 +122,7 @@
       type: "Product design",
       description:
         "Contextual productivity for research, decisions, and shared work.",
-      url: "https://aiworkspa-nzdo48cx.manus.space/",
+      url: "https://handsomeworkspace.netlify.app/",
       image: "assets/images/projects/portfolio_4_aiworkspace.png",
       imageAlt:
         "AI Workspace product page headlined “Your work, amplified by AI.”",
@@ -178,7 +178,7 @@
       title: "StayNest Marketplace",
       type: "Product design",
       description: "Find a place worth staying for.",
-      url: "https://staynest-mra4smen.manus.space/",
+      url: "https://staynestmarketplace.netlify.app/",
       image: "assets/images/projects/portfolio_5_staynest.png",
       imageAlt:
         "StayNest travel marketplace homepage headlined “Find a place worth staying for.”",
@@ -234,7 +234,7 @@
       title: "CoolTeam SaaS",
       type: "Product design",
       description: "One shared rhythm, from first thought to final file.",
-      url: "https://coolteamsaas-tq4ccrhg.manus.space/",
+      url: "https://coolteam.netlify.app/",
       image: "assets/images/projects/portfolio_6_coolteam.png",
       imageAlt:
         "CoolTeam collaboration SaaS homepage headlined “From brief to final delivery, together.”",
@@ -346,7 +346,7 @@
       title: "Foodie Marketplace",
       type: "Product design",
       description: "Everything you crave, delivered.",
-      url: "https://foodiehub-dmeuqz3s.manus.space/",
+      url: "https://foodiemarketplace.netlify.app/",
       image: "assets/images/projects/portfolio_8_foodiehub.png",
       imageAlt: "Foodie Marketplace showcase",
       tags: PROD,
@@ -401,7 +401,7 @@
       title: "Hirely Jobs",
       type: "Product design",
       description: "A more considered way to hire.",
-      url: "https://hirelyjob-g6az9pqk.manus.space/",
+      url: "https://hirelyjob.netlify.app/",
       image: "assets/images/projects/portfolio_9_hirely.png",
       imageAlt:
         "Hirely job marketplace homepage headlined “Work that moves with you.”",
@@ -453,7 +453,7 @@
       title: "ARVELA Furniture",
       type: "Ecommerce",
       description: "Thoughtfully designed pieces for calmer rooms.",
-      url: "https://tidyfurnish-9ozvvrkn.manus.space/",
+      url: "https://arvela-store.netlify.app/",
       image: "assets/images/projects/portfolio_10_arvela.png",
       imageAlt:
         "ARVELA furniture storefront with the word “harmony” beside an armchair",
