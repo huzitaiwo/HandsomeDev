@@ -673,7 +673,7 @@
       title: "PULSE Operations",
       type: "Product design",
       description: "An operating picture for the work ahead.",
-      url: "https://pulseops-ea4kn5x8.manus.space/",
+      url: "https://pulseoperation.netlify.app/",
       image: "assets/images/projects/portfolio_14_pulseops.png",
       imageAlt: "PULSE Operations dark dashboard interface",
       tags: PROD,
